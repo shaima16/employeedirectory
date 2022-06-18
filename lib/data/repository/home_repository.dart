@@ -12,12 +12,12 @@ class HomeRepository {
     return employeeModelFromJson(response.body);
   }
 
-Future<dynamic> fetchEmployee() async {
-  var response = await http.get("http://www.mocky.io/v2/5d565297300000680030a986");
-  if (response.runtimeType.toString() == 'Response') {
-    EmployeeModel data =
-    EmployeeModel.fromJson(response.body);
-    return data;
-  }
-  return response;
-}}
+// Future<dynamic> fetchEmployee() async {
+//   var response = await http.get("http://www.mocky.io/v2/5d565297300000680030a986");
+//   if (response.runtimeType.toString() == 'Response') {
+//     EmployeeModel data =
+//     EmployeeModel.fromJson(response.body);
+//     return data;
+//   }
+//   return response;
+// }}
